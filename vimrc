@@ -142,10 +142,10 @@
     " file encode  
     "==========================================  
     " 设置新文件的编码为 UTF-8  
-    "set fileencoding=utf8  
-    set enc=2byte-gb18030  
+    "set fileencoding=utf-8 
+    set encoding=utf-8  
     " 自动判断编码时，依次尝试以下编码：  
-    set fileencodings=ucs-bom,utf-8,gb18030,default  
+    set fileencodings=utf-8,ucs-bom,gb18030,default  
     " gb18030 最好在 UTF-8 前面，否则其它编码的文件极可能被误识为 UTF-8  
       
     " Use Unix as the standard file type  
