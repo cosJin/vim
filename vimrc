@@ -120,9 +120,9 @@
     syntax on  
       
     "配色方案 三种,选一个  
-    colorscheme darkblue          " 深蓝色配色方案。  
+    "colorscheme darkblue          " 深蓝色配色方案。  
       
-    "colorscheme desert " 经典配色方案。  
+    colorscheme desert " 经典配色方案。  
     set background=dark  
       
     "同sublime text2  
