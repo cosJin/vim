@@ -28,8 +28,6 @@
     set nowb  
     set noswapfile  
       
-    "粘贴时保持格式  
-    set paste  
     "- 则点击光标不会换,用于复制  
     set mouse-=a           " 在所有的模式下面打开鼠标。  
     set selection=exclusive    
