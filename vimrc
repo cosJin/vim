@@ -8,7 +8,6 @@
     " history存储长度。
     set history=1000
 
-    inoremap jk <Esc>
     "检测文件类型
     filetype on
     " 针对不同的文件类型采用不同的缩进格式
@@ -47,8 +46,20 @@
     set nowrap                    " 取消换行。  
     ""为方便复制，用<F2>开启/关闭行号显示:  
     nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>  
-    inoremap jk <C-[>   
-    "括号配对情况  
+    "括号配对情况
+    inoremap jk <ESC>
+    inoremap ' ''<ESC>i
+    inoremap " ""<ESC>i
+    inoremap ( ()<ESC>i
+    inoremap [ []<ESC>i
+    inoremap { {}<ESC>i
+    inoremap < <><ESC>i
+    inoremap '' ''<ESC>a
+    inoremap "" ""<ESC>a
+    inoremap () ()<ESC>a
+    inoremap [] []<ESC>a
+    inoremap {} {}<ESC>a
+    inoremap <> <><ESC>a
     set showmatch  
     " How many tenths of a second to blink when matching brackets  
     set mat=2  
