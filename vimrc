@@ -1,43 +1,39 @@
-    "config begin  
-    "impressive : http://amix.dk/vim/vimrc.html  
-      
-    "==========================================  
-    "General  
-    "==========================================  
-      
-    " history存储长度。  
-    set history=1000         
-      
-    "检测文件类型  
-    filetype on  
-    " 针对不同的文件类型采用不同的缩进格式    
-    filetype indent on                 
-    "允许插件    
-    filetype plugin on  
-    "启动自动补全  
-    filetype plugin indent on  
-      
-    " 非兼容vi模式。去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
+    "config begin
+    "impressive : http://amix.dk/vim/vimrc.html
+    
+    "==========================================
+    "General
+    "==========================================
+
+    " history存储长度。
+    set history=1000
+
+    inoremap jk <Esc>
+    "检测文件类型
+    filetype on
+    " 针对不同的文件类型采用不同的缩进格式
+    filetype indent on
+    "允许插件
+    filetype plugin on
+    "启动自动补全
+    filetype plugin indent on
+
+  " 非兼容vi模式。去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
     set nocompatible        
     set autoread          " 文件修改之后自动载入。  
-    set shortmess=atI       " 启动的时候不显示那个援助索马里儿童的提示  
-      
+    set shortmess=atI       " 启动的时候不显示那个援助索马里儿童的提示
+    
     " 取消备份。  
     " Turn backup off, since most stuff is in SVN, git et.c anyway...  
     set nobackup  
     set nowb  
     set noswapfile  
-      
-    "粘贴时保持格式  
-    set paste  
-    "- 则点击光标不会换,用于复制  
+
     set mouse-=a           " 在所有的模式下面打开鼠标。  
     set selection=exclusive    
     set selectmode=mouse,key  
-      
-    " No annoying sound on errors  
-    " 去掉输入错误的提示声音  
-    set noerrorbells  
+
+  set noerrorbells  
     set novisualbell  
     set t_vb=  
     set tm=500  
@@ -51,8 +47,7 @@
     set nowrap                    " 取消换行。  
     ""为方便复制，用<F2>开启/关闭行号显示:  
     nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>  
-      
-      
+    inoremap jk <C-[>   
     "括号配对情况  
     set showmatch  
     " How many tenths of a second to blink when matching brackets  
@@ -101,7 +96,7 @@
     " Set 7 lines to the cursor - when moving vertically using j/k 上下滚动,始终在中间  
     set so=7  
       
-    "set cursorline              " 突出显示当前行  
+"    set cursorline              " 突出显示当前行  
       
     " 命令行（在状态行下）的高度，默认为1，这里是2  
     "set cmdheight=2  
@@ -161,9 +156,8 @@
     "others  
     "==========================================  
       
-    autocmd! bufwritepost _vimrc source % " vimrc文件修改之后自动加载。 windows。  
+    "autocmd! bufwritepost _vimrc source % " vimrc文件修改之后自动加载。 windows。  
     autocmd! bufwritepost .vimrc source % " vimrc文件修改之后自动加载。 linux。  
-      
       
     " 自动完成   
     set completeopt=longest,menu  

@@ -7,7 +7,7 @@
       
     " history存储长度。  
     set history=1000         
-      
+    inoremap jk <ESC>  
     "检测文件类型  
     filetype on  
     " 针对不同的文件类型采用不同的缩进格式    
@@ -136,7 +136,7 @@
         set t_Co=256  
         set guitablabel=%M\ %t  
     endif  
-    "set guifont=Monaco:h20          " 字体 && 字号    
+    "set guifont=Monospace:10          " 字体 && 字号    
       
     "==========================================  
     " file encode  
@@ -163,7 +163,6 @@
       
     autocmd! bufwritepost _vimrc source % " vimrc文件修改之后自动加载。 windows。  
     autocmd! bufwritepost .vimrc source % " vimrc文件修改之后自动加载。 linux。  
-      
       
     " 自动完成   
     set completeopt=longest,menu  
