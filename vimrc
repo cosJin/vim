@@ -42,10 +42,10 @@
     " show and format  
     "==========================================  
     "显示行号：  
-    set number  
-    set nowrap                    " 取消换行。  
+    "set number  
+    "set nowrap                    " 取消换行。  
     ""为方便复制，用<F2>开启/关闭行号显示:  
-    nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>  
+    "nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>  
     "括号配对情况
     inoremap jk <ESC>
     inoremap ' ''<ESC>i
@@ -104,8 +104,8 @@
     ""在状态栏显示正在输入的命令  
     set showcmd  
       
-    " Set 7 lines to the cursor - when moving vertically using j/k 上下滚动,始终在中间  
-    set so=7  
+    " Set 3 lines to the cursor - when moving vertically using j/k 上下滚动,始终在中间  
+    set so=3  
       
 "    set cursorline              " 突出显示当前行  
       
@@ -151,7 +151,7 @@
     "set fileencoding=utf-8 
     set encoding=utf-8  
     " 自动判断编码时，依次尝试以下编码：  
-    set fileencodings=utf-8,ucs-bom,gb18030,default  
+    set fileencodings=gb18030,utf-8,ucs-bom,default  
     " gb18030 最好在 UTF-8 前面，否则其它编码的文件极可能被误识为 UTF-8  
       
     " Use Unix as the standard file type  
